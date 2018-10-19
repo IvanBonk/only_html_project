@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Web-development</title>
+</head>
+	<body>
+		<header>
+			<div>
+				<a href="index.html">
+					<img src="img/logo1.png" alt="logotype" height="100" width="100">
+				</a>
+				<h2>Моя Сторінка тестування тегів HTML</h2>
+				<!--<button>
+					<a href="index.html">Тести!</a>
+				</button> -->
+				<a href="index.html">На головну</a>	
+			</div>
+		</header>
+		<section>
+			<br><hr><br>
+			<form action="https://formspree.io/vaaeking@gmail.com" method="POST">
+				<fieldset>
+					<legend>
+						Маленький тест:
+					</legend>
+					<label>
+						Розмір вікна браузера тисячі пікселів. На сторінку додали блок з шириною 40%. Потім в цей блок додали таблицю з шириною 50%. Яка буде ширина таблиця в пікселях?
+						<br>
+						<label>
+							<input type="checkbox" name="test" value="200 пікселів.">
+							200 пікселів.
+						</label>
+						<label>
+							<input type="checkbox" name="test" value="Недостатньо данних.">
+							Недостатньо данних.
+						</label>
+						<label>
+							<input type="checkbox" name="test" value="500 пікселів.">
+							500 пікселів.
+						</label>
+						<label>
+							<input type="checkbox" name="test" value="250 пікселів.">
+							250 пікселів.
+						</label>
+					</label>
+					<br>
+					<p>
+						Василю потрібно вивести на сторінку код, який він написав на мові Java. Який тег для цього йому необхідно використовувати?
+						<br>
+						<label>
+							<input type="checkbox" name="test" value="<pre>">
+							 pre
+						</label>
+						<label>
+							<input type="checkbox" name="test" value="<code>">
+							code
+						</label>
+						<label>
+							<input type="checkbox" name="test" value="<java>">
+							java
+						</label>
+						<label>
+							<input type="checkbox" name="test" value="<p>">
+							p
+						</label>
+					</p>
+					<br>
+					<p>
+						На сайті всередині папки pages знаходиться файл page.html. А всередині папки images знаходиться файл foto.jpg. Причому папки images і pages лежать в корені сайту. Як правильно написати шлях до foto.jpg з файлу page.html:
+						<br>
+						<label>
+							<input type="checkbox" name="test" value="images/foto.jpg">
+							images/foto.jpg
+						</label>
+						<label>
+							<input type="checkbox" name="test" value="../images/pages/foto.jpg">
+							../images/pages/foto.jpg
+						</label>
+						<label>
+							<input type="checkbox" name="test" value="pages/images/foto.jpg">
+							pages/images/foto.jpg
+						</label>
+						<label>
+							<input type="checkbox" name="test" value="../images/foto.jpg">
+							../images/foto.jpg
+						</label>
+					</p>
+				</fieldset>
+				<fieldset>
+					<legend>
+						Дані студента:
+					</legend>
+					<label for="student_name">
+						Ім'я: 
+						<input type="text" name="student_name" id="student_name" placeholder="Введіть ім'я" size="30" maxlength="100" required autofocus>
+					</label>
+					<br>
+					<label for="student_email">
+						Email:
+						<input type="text" name="student_email" id="student_email" placeholder="email" size="30" maxlength="100" required>
+					</label>
+					<br><br>
+					<label for="birthday">
+						Уважіть дату народження:
+						<input type="date" id="birthday" required>
+					</label>
+					<br><br>
+					<label for="my_password">
+						Придумайте пароль:
+						<input type="password" id="my_password" required>
+					</label>
+					<br>
+					<label for="university">
+						<br>
+						Виберіть навчальний заклад:
+						<select name="university" id="university" >
+							<option value="NULP">НУ"Львівська політехніка"</option>
+							<option value="LNU">Львівський національний університет</option>
+							<option value="UCU">Український католилький університет</option>
+							<option value="other">Інший(вкажіть нижче)</option>
+						</select>
+						<br><br>
+						<label for="other">
+							<input type="text" id="other">
+						</label>
+					</label>
+				</fieldset>
+				<br>
+				<fieldset>
+					<legend>
+						Ваша думка:
+					</legend>
+					<p>
+						<label for=hear-about>
+							Як ви дізнались про нас?
+						</label>
+						<select name="referrer" id="hear-about">
+							<option value="google">Google</option>
+							<option value="friend">Від друзів</option>
+							<option value="advert">Реклама</option>
+							<option value="other">Інше</option>
+						</select>
+					</p>
+					<p>
+						Чи відвідаєте наш сайт знову?
+						<br>
+						<label>
+							<input type="radio" name="rating" value="yes">
+							Так
+						</label>
+						<label>
+							<input type="radio" name="rating" value="no">
+							Ні
+						</label>
+						<label>
+							<input type="radio" name="rating" value="maybe">
+							Можливо
+						</label>
+					</p>
+					<p>
+						<label for="comments">
+							Коментарі:
+						<br>
+						<textarea id="comments" cols="40" rows="4"></textarea>
+						</label>
+					</p>
+					<label>
+						<input type="checkbox" name="subscribe" checked="checked">
+						Я хочу отримувати розсилку з новинами сайту
+					</label>
+					<br>
+					<input type="submit" value="Відправити">
+				</fieldset>
+			</form>
+		</section>
+		<footer>
+			<br><hr>
+			<p>All Content Copyright 2018 - <b>Bonk</b>. All Rights Reserved.</p>
+			<p>Site Developed by <b>Bonk Ivan KN-213</b></p>
+		</footer>
+	</body>
+</html>
